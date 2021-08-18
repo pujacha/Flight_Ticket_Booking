@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Management System</title>
+  <!-- font awesome cdn  -->
+  <script src="https://kit.fontawesome.com/ad504257fe.js" crossorigin="anonymous"></script>
+  <!-- bootstrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <style>
+    body {
+      background-image: url(./img/bg.png);
+      background-blend-mode: overlay;
+      background-color: rgba(0, 0, 0, 0.377);
+      color: black;
+
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container mt-4 p-4 mx-auto w-25 bg-white">
+    <h3 class='my-2 text-center'>Flight Booking</h3>
+    <div class="row g-3">
+      <div class="col-md-12">
+        <label for="inputEmail4" class="form-label">Flying From</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-md-12">
+        <label for="inputPassword4" class="form-label">Flying To</label>
+        <input type="password" class="form-control" id="inputPassword4">
+      </div>
+      <div class="col-md-12">
+        <label for="inputAddress" class="form-label">Departure</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+      </div>
+      <div class="col-md-12">
+        <label for="inputAddress2" class="form-label">Return</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+      </div>
+      <div class="col-md-12">
+        <label for="inputCity" class="form-label">First Class($150)</label>
+        <input type="text" class="form-control" id="inputCity" class="fas fa-minus" value="0"><br>
+        <button class='btn btn-success' id='firstClassPlus'><i class="fas fa-plus fw-bold"></i> </button>
+        <button class='btn btn-danger' id='firstClassMinus'> <i class="fas fa-minus"></i></button>
+      </div>
+      <div class="col-md-12">
+        <label for="inputCity" class="form-label">Economy($100)</label>
+        <input type="text" class="form-control" id="ecoInputCity" value="0"> <br>
+        <button class='btn btn-success id' id='economyPlus'><i class="fas fa-plus"></i></button>
+        <button class='btn btn-danger' id='economysMinus'><i class="fas fa-minus"></i></button>
+      </div>
+      <div class='d-flex justify-content-between'>
+        <h4  >Subtotal</h4>
+        <h4>$<span id= 'subtotal'>0</span></h4>
+      </div>
+      <div class='d-flex justify-content-between'>
+        <h4>Charge 10% VAT</h4>
+        <h4>$<span id = 'vat'>0</span></h4>
+      </div>
+      <hr>
+      <div class='d-flex justify-content-between'>
+        <h4>Total</h4>
+        <h4>$ <span id = 'total'>0</span></h4>
+      </div>
+     
+      <div class="col-md-12">
+        <button type="submit" class="btn btn-primary">Book Now</button>
+      </div>
+    </div>
+  </div>
+  <!-- js link  -->
+  <script src="./index.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
